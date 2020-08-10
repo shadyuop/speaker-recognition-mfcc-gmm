@@ -139,9 +139,9 @@ def record_audio_test():
 
 def train_model():
 
-    source = "D:\\Speaker-Identification-Using-Machine-Learning-master\\training_set\\"
-    dest = "D:\\Speaker-Identification-Using-Machine-Learning-master\\trained_models\\"
-    train_file = "D:\\Speaker-Identification-Using-Machine-Learning-master\\training_set_addition.txt"
+    source = ".\\training_set\\"
+    dest = ".\\trained_models\\"
+    train_file = ".\\training_set_addition.txt"
     file_paths = open(train_file, 'r')
     count = 1
     features = np.asarray(())
@@ -175,9 +175,9 @@ def train_model():
 
 def test_model():
 
-    source = "D:\\Speaker-Identification-Using-Machine-Learning-master\\testing_set\\"
-    modelpath = "D:\\Speaker-Identification-Using-Machine-Learning-master\\trained_models\\"
-    test_file = "D:\\Speaker-Identification-Using-Machine-Learning-master\\testing_set_addition.txt"
+    source = ".\\testing_set\\"
+    modelpath = ".\\trained_models\\"
+    test_file = ".\\testing_set_addition.txt"
     file_paths = open(test_file, 'r')
 
     gmm_files = [os.path.join(modelpath, fname) for fname in
@@ -212,9 +212,9 @@ def test_model():
 
 def verify_model():
 
-    source = "D:\\Speaker-Identification-Using-Machine-Learning-master\\testing_set\\"
-    modelpath = "D:\\Speaker-Identification-Using-Machine-Learning-master\\trained_models\\"
-    test_file = "D:\\Speaker-Identification-Using-Machine-Learning-master\\testing_set_addition.txt"
+    source = ".\\testing_set\\"
+    modelpath = ".\\trained_models\\"
+    test_file = ".\\testing_set_addition.txt"
     file_paths = open(test_file, 'r')
 
     gmm_files = [os.path.join(modelpath, fname) for fname in
